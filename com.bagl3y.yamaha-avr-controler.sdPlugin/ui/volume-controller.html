@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head lang="en">
+		<title>Volume Controller Settings</title>
+		<meta charset="utf-8" />
+		<script src="https://sdpi-components.dev/releases/v4/sdpi-components.js"></script>
+	</head>
+
+	<body>
+		<!--
+        Learn more about property inspector components at https://sdpi-components.dev/docs/components
+    -->
+		<sdpi-item label="AVR IP Address">
+			<sdpi-textfield setting="ip" placeholder="e.g. 192.168.1.100" required></sdpi-textfield>
+		</sdpi-item>
+		<sdpi-item label="Volume Step">
+			<sdpi-range setting="step" min="1" max="10" step="1" default="1" showlabels></sdpi-range>
+		</sdpi-item>
+		<sdpi-item label="Max Volume (dB)">
+			<sdpi-range setting="maxVolume" min="-10" max="16.5" step="0.5" default="16.5" showlabels></sdpi-range>
+		</sdpi-item>
+	</body>
+</html>

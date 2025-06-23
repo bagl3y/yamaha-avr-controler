@@ -1,0 +1,54 @@
+{
+    "Name": "Yamaha AVR Controller",
+    "Version": "0.1.0.0",
+    "Author": "Bagl3y",
+    "Actions": [
+        {
+            "Name": "Volume",
+            "UUID": "com.bagl3y.yamaha-avr-controler.volume",
+            "Icon": "imgs/actions/volume/icon",
+            "Tooltip": "Control Yamaha AVR Volume",
+            "PropertyInspectorPath": "ui/volume-controller.html",
+            "Controllers": [
+                "Encoder"
+            ],
+            "Encoder": {
+                "layout": "$B1",
+                "TriggerDescription": {
+                    "Rotate": "Change Volume",
+                    "Push": "Mute/Unmute",
+                    "Touch": "Show current volume"
+                }
+            },
+            "States": [
+                {
+                    "Image": "imgs/actions/counter/key"
+                }
+            ]
+        }
+    ],
+    "Category": "Yamaha AVR Control",
+    "CategoryIcon": "imgs/plugin/category-icon",
+    "CodePath": "bin/plugin.js",
+    "Description": "Control your Yamaha AVR with your Stream Deck.",
+    "Icon": "imgs/plugin/marketplace",
+    "SDKVersion": 2,
+    "Software": {
+        "MinimumVersion": "6.5"
+    },
+    "OS": [
+        {
+            "Platform": "mac",
+            "MinimumVersion": "12"
+        },
+        {
+            "Platform": "windows",
+            "MinimumVersion": "10"
+        }
+    ],
+    "Nodejs": {
+        "Version": "20",
+        "Debug": "enabled"
+    },
+    "UUID": "com.bagl3y.yamaha-avr-controler"
+}
