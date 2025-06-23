@@ -22,12 +22,12 @@
             },
             "States": [
                 {
-                    "Image": "imgs/actions/counter/key"
+                    "Image": "imgs/actions/volume/icon"
                 }
             ]
         }
     ],
-    "Category": "Yamaha AVR Control",
+    "Category": "Yamaha AVR Controller",
     "CategoryIcon": "imgs/plugin/category-icon",
     "CodePath": "bin/plugin.js",
     "Description": "Control your Yamaha AVR with your Stream Deck.",
